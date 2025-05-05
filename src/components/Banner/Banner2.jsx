@@ -2,7 +2,7 @@ import React from 'react'
 import Banner2Png from '/src/assets/banner2.png';
 import { BiPlayCircle} from "react-icons/bi";
 
-const Banner2 = () => {
+const Banner2 = ({togglePlay}) => {
   return (
     <div className=" py-0 md:py-6 relative my-10 md:mx-40">
     <div className='container'>
@@ -22,7 +22,7 @@ const Banner2 = () => {
     <button className='primary-btn'>
         Get Started
     </button>
-    <button className='flex items-center gap-2 '>
+    <button  onClick={togglePlay} className='flex items-center gap-2 cursor-pointer'>
         {" "}
         <BiPlayCircle className='text-3xl' />
         See Demo
